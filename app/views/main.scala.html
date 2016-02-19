@@ -1,0 +1,28 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Angular 2 QuickStart</title>
+
+        <script src="@routes.Assets.versioned("javascripts/angular2/bundles/angular2-polyfills.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("javascripts/systemjs/dist/system.src.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("javascripts/rxjs/bundles/Rx.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("javascripts/angular2/bundles/angular2.min.js")" type="text/javascript"></script>
+
+        <script>
+        System.config({
+          baseURL: 'assets/javascripts',
+          defaultJSExtensions: true
+        });
+          System.import('boot')
+                .then(null, console.error.bind(console));
+        </script>
+
+
+    </head>
+    <body>
+        <my-app>Loading...</my-app>
+    </body>
+</html>
