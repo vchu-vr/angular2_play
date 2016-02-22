@@ -1,4 +1,51 @@
+Environment Set Up
+
+All the frameworks are cross-platform for Mac and Windows.  
+
+1.  Java: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html.  
+  (If you’re installing JDK for the first time on Windows, you might need to
+  add C:\Program Files\Java\jdk1.8.0_65\bin to your paths manually in order to
+  be able to use javac on the command line.)
+
+2. Activator: https://www.typesafe.com/activator/download
+    You can use the activator.bat or ./activator directly from the downloaded
+    package.  You can also follow the steps below to add activator to your
+    environment so you can launch activator easily when you’re developing the
+    project.
+
+  * For Windows
+    1. Unzip the activator package to a target location e.g. C:\Users\Public\activator-dist
+    2. Go to the Environment Variables dialog
+    3. Under System variables, find Path and press Edit... 
+    4. Add to your path: e.g. C:\Users\Public\activator-dist
+    5. Open cmd.exe and enter activator help. If the command is not
+    recognized, the environment variable wasn’t configured properly.
+
+  * For Mac OS X
+    1. Unzip activator-dist package somewhere
+    2. Add lines to ~/.profile
+    3. export ACTIVATOR_HOME="absolute path to where activator was unzipped"
+    4. export PATH="$PATH:$ACTIVATOR_HOME"
+    5. source ~/.profile
+    6. Fix execute flag: chmod +x $ACTIVATOR_HOME/activator
+    7. Test with activator help
+
+3. Node: https://nodejs.org/en/download/
+
+Verifying environment setup
+===========================
+
+  To ensure proper setup, type in “activator -help” on your command line to
+  test if Activator is properly installed. For node, type in “node --version”.
+  Open a new command line in the project directory. To start it, simply type in
+  “activator run”.
+
+  To stop the server, simply use Ctrl + D.
+
+  When you see that screen, open up your web browser type in
+  http://localhost:9000/ in your address bar. 
+
+
 This is your new Play application
 =================================
-
 This file will be packaged with your application, when using `activator dist`.
