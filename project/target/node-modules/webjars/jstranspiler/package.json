@@ -1,0 +1,11 @@
+{
+	"name": "jstranspiler",
+	"version": "1.0.0",
+	"description": "A js lib for providing a convenient framework in order to process a set of source files and produce a set of output files",
+	"keywords": ["transpiler", "framework"],
+	"homepage": "https://github.com/typesafehub/jstranspiler#jstranspiler",
+	"bugs": "https://github.com/typesafehub/jstranspiler/issues",
+	"license": "Apache-2.0",
+	"main": "src/main.js",
+	"dependencies": {"mkdirp": "0.5.0", "when": "3.2.2"}
+}
